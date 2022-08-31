@@ -1,5 +1,6 @@
-# blank repo
-Repo for sharing class resources
-================================
+# blank
+#### Repo for sharing class resources
+
+and sharing examples and ideas
 
 
