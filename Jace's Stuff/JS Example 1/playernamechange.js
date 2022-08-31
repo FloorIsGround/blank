@@ -1,4 +1,4 @@
-const para = document.querySelector('p');
+const para = document.getElementById("playerName");
         para.addEventListener('click', updateName);
         let debug = true;
         function updateName() {
@@ -8,5 +8,4 @@ const para = document.querySelector('p');
                 console.log("User changed name to " + name + ".");
             }
             para.textContent = "Player 1: " + name
-
         }
