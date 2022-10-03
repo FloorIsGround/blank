@@ -19,3 +19,13 @@ console.log(indexOfMonths);
 
 let lIndexofMonths = months.lastIndexOf("apr");
 console.log(lIndexofMonths);
+
+let number2 = [123, 453, 73, 8, 10];
+
+number2.forEach((item, index, array) => {
+    console.log(`${item} index of is ${index} in ${array}`);
+})
+
+number2.map((item) => {
+    console.log(`${item} is multiplied by 3 and the result is ${item*3}`);
+})
