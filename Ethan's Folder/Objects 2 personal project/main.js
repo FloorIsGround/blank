@@ -6,7 +6,7 @@ const Car = {
 
 const ElectricCar = Object.create(Car);
 
-ElectricCar.doors = 2;
+ElectricCar.
 ElectricCar.color = "green";
 ElectricCar.engine = "silent";
 
