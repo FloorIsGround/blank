@@ -1,0 +1,89 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1 auto auto auto auto auto;
+    grid-template-rows: auto auto 1;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.menu {
+    grid-column: 1 / 2;
+}
+
+.upgrade-menu {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+}
+
+.upgrade-item {
+    grid-auto-columns: auto;
+    user-select:none;
+}
+
+.side {
+    grid-column: 1 / 2;
+    grid-row: auto;
+}
+
+.main {
+    grid-column: 2 / 6;
+    grid-row: auto;
+}
+
+.bottom-bar {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+}
+
+.gui-toast-group{
+    position: fixed;
+    z-index: 1;
+    inset-block-end: 0;
+    inset-inline: 0;
+    padding-block-end: 5vh;
+    display: grid;
+    justify-items: right;
+    justify-content: left;
+    gap: 1vh;
+    pointer-events: none;
+}
+
+.gui-toast {
+    max-inline-size: min(25ch, 90vw);
+    padding-block: .5ch;
+    padding-inline: 1ch;
+    border-radius: 3px;
+    font-size: 1rem;
+    
+    --_duration: 3s;
+    --_travel-distance: 0;
+  
+    will-change: transform;
+    animation: 
+      fade-in .3s ease,
+      slide-in .3s ease,
+      fade-out .3s ease var(--_duration);
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .gui-toast {
+      --_travel-distance: 5vh;
+    }
+  }
+
+@keyframes fade-in {
+    from { opacity: 0 }
+  }
+  
+  @keyframes fade-out {
+    to { opacity: 0 }
+  }
+  
+  @keyframes slide-in {
+    from { transform: translateY(var(--_travel-distance, 10px)) }
+  }

@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" defer type="module"></script>
+    <script src="extras.js" defer type="module"></script>
+    <link  rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<section class="gui"></section>
 <body>
-    <div id="ourScore"></div>
-    <div id="ourMult"></div>
-    <button id="input">Big Number Maker</button>
-    <button id="upgradeMultiplier">Upgrade cost: </button>
+    <div class="grid">
+        <div id="main-menu" class="card border-primary mb-3 side" style="max-width: 15em;">
+            <div id="ourScore" class="card-header"></div>
+            <div id="ourMult" class="card-body"></div>
+            </div>
+        <div class="container-fluid .rows-cols-auto main menu-grid">
+            <div class="card border-primary mb-3 offset-2 menu row">
+                <button id="input">Make Some Quick Cash!</button>
+            </div>
+            <div class="offset-1 upgrade-menu">
+                <div id="upgrade-item-1" class="card border-primary offset-0 mb-3 upgrade-item" style="max-width: 20rem;">
+                    <div class="card-header">Upgrades</div>
+                    <div class="card-body">
+                    <h4 class="card-title">Primary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div id="upgradeMultiplier" class="card border-primary mb-3 upgrade-item" style="max-width: 20rem;">
+                    <div class="card-header">Upgrades</div>
+                    <div class="card-body">
+                        <div class="card-title btn-group-horizontal">
+                            <button id="osbtn5">5%</button>
+                            <button id="osbtn25">25%</button>
+                            <button id="osbtn50">50%</button>
+                            <button id="osbtn75">75%</button>
+                            <button id="osbtnmax">100%</button>
+                        </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div id="upgradeMultiplier" class="card border-primary mb-3 upgrade-item" style="max-width: 20rem;">
+                    <div class="card-header">Upgrades</div>
+                    <div class="card-body">
+                    <h4 class="card-title">Primary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div id="upgradeMultiplier" class="card border-primary mb-3 upgrade-item" style="max-width: 20rem;">
+                    <div class="card-header">Upgrades</div>
+                    <div class="card-body">
+                    <h4 class="card-title">Primary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid card border-secondary bottom-bar p-0">
+            <button id="save" class="btn btn-secondary btn-small">save</button>
+        </div>
+    </div>
+    
 </body>
 </html>
