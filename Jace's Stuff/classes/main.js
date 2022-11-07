@@ -7,7 +7,7 @@ class game {
         this.cost = 10;
         this.level = 0;
         this.os = 0;
-        this.os_int = 1.1;
+        this.os_int = 0.01;
     }
 
     get getScore(){
